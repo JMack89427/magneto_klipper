@@ -1,0 +1,16 @@
+[Unit]
+Description=Moonraker Telegram Bot SV1 %INST%
+Documentation=https://github.com/nlef/moonraker-telegram-bot/wiki
+After=network-online.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+User=%USER%
+WorkingDirectory=/home/%USER%/moonraker-telegram-bot
+EnvironmentFile=%ENV_FILE%
+ExecStart=%ENV%/bin/python $TELEGRAM_BOT_ARGS
+Restart=always
+RestartSec=10

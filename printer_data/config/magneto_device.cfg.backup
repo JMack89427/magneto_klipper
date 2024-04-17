@@ -1,0 +1,7 @@
+[mcu MAG_TOOL]
+canbus_uuid: c9fc3c9e8515
+
+
+[mcu]
+serial: /dev/serial/by-id/usb-Klipper_stm32h723xx_440031001751313434373135-if00
+
